@@ -88,7 +88,7 @@ h2 {
     width: 100%;
 }
 
-.page-cover__title__div>small>span {
+.highlight {
     color: var(--hight-light);
 }
 
@@ -98,10 +98,6 @@ h2 {
     width: 100%;
     max-width: 680px;
     min-width: 196.2px;
-    /*
-    position: absolute;
-    top: 6rem;
-    right: 1.5rem; */
 }
 
 .page-cover__socials {
@@ -113,8 +109,6 @@ h2 {
     justify-content: left;
     gap: 2rem;
 }
-
-
 
 .about {
     padding: 0 1.5rem;
@@ -129,7 +123,7 @@ h2 {
     text-align: justify;
 }
 
-.about__cards {
+.about-studies {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -138,11 +132,11 @@ h2 {
     padding: 2rem 0;
 }
 
-.about__cards>div {
+.about-studies__itm {
     text-align: center;
 }
 
-.about__cards>div img {
+.about-studies__icon {
     width: 45%;
 }
 
@@ -230,10 +224,7 @@ h2 {
     font-weight: 600;
     padding: 1rem;
 }
-.skills__table span {
-    color: var(--hight-light);
-    
-}
+
 
 /* Section Portfolio */
 .portfolio{
@@ -246,13 +237,7 @@ h2 {
 }
 .portfolio__h2{
     text-align: center;
-    padding: 1rem;
-}
-.portfolio article{
-    padding: 1rem 1.5rem;
-}
-.portfolio article:nth-child(odd){
-    text-align: right;
+    padding: 1rem 0 2rem 0;
 }
 .portfolio__img-container{
     position: relative;
@@ -268,16 +253,20 @@ h2 {
     bottom: 3rem;
     background-color: var(--hight-light);
 }
-.portfolio__img-container .custom-after:hover{
-    filter:bluer(10px);
+.portfolio__card{
+    padding: 1rem 1.5rem;
 }
+.portfolio__card:nth-child(odd){
+    text-align: right;
+}
+
 .portfolio__img-container img{
     position: relative;
     z-index: 5;
     width: 100%;
     height: auto;
 }
-.portfolio p{
+.portfolio__text{
     text-align: left;
 }
 
@@ -296,12 +285,14 @@ h2 {
     width: 100%;
 
 }
-.contact article{
-    text-align: center;
-}
-.contact img{
+.contact__icon{
     width: 5rem;
 }
+.contact_cell-data{
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
 
 
 /*=================================================*/
@@ -327,7 +318,7 @@ h2 {
         gap: 3rem;
     }
 
-    .page-cover__socials img {
+    .page-cover__socials__icon {
         width: 4rem;
     }
 
@@ -336,11 +327,11 @@ h2 {
         gap: 15rem;
     }
 
-    .about__cards>div img {
+    .about__cards__icon {
         width: 100%;
     }
 
-    .about__cards>div h4 {
+    .about__cards__title {
         font-size: 30px;
     }
 
