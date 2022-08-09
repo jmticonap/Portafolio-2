@@ -1,0 +1,162 @@
+/* <nav>
+    <img src="./assets/img/logo.svg" alt="logo" >
+    <section>
+        <input id="input_toggle" type="checkbox">
+        <label for="input_toggle">
+            <img src="./assets/img/icon-hamburger.svg" alt="">
+        </label>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+</nav> */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #242635;
+    --ul-background-color: #e5e5e5;
+    --links-hover-color:#f1a600;
+    --color: #FFF;
+    --nav-background-color: transparent;
+}
+
+.show_mobile_nav{
+    display: flex !important;
+}
+
+.desktop__nav{
+    background-color: var(--nav-background-color);
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.desktop__nav>img{
+    height: 1rem;
+    width: auto;
+}
+
+.desktop__nav>section{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.desktop__nav>section>input{
+    display: none;
+}
+
+.desktop__nav>section>label{
+    display: none;
+    align-items: center;
+}
+
+.desktop__nav>section>ul{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+/* .desktop__nav>section>ul>li{
+    padding: 0.5rem 1rem;
+} */
+
+.desktop__nav>section>ul>li>a{
+    text-decoration: none;
+    color: var(--color);
+    padding: 0.5rem 1rem;
+}
+
+.desktop__nav>section>ul>li>a:hover{
+    background-color: var(--links-hover-color);
+    color: #fff;
+    border-radius: 2rem;
+    
+}
+/*=============================================*/
+.mobile__nav{
+    background-color: var(--nav-background-color);
+    min-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: relative;
+}
+
+.mobile__nav>img{
+    height: 1rem;
+    width: auto;
+}
+
+.mobile__nav>section{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+
+.mobile__nav>section>input{
+    display: none;
+}
+
+.mobile__nav>section>label{
+    display: flex;
+    align-items: center;
+}
+
+.mobile__nav>section>ul{
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    list-style: none;
+    background-color: var(--ul-background-color);
+
+    position: absolute;
+    top: 4.5rem;
+    left: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+.mobile__nav>section>ul::after {
+    content: "";
+    display: block;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid var(--ul-background-color);
+    border-right: 15px solid var(--ul-background-color);
+    border-left: 15px solid transparent;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.mobile__nav>section>ul>li{
+    padding: 1rem 2rem;
+}
+
+.mobile__nav>section>ul>li>a{
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 2rem;
+}
+
+.mobile__nav>section>ul>li>a:hover{
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 2rem;
+    
+}
