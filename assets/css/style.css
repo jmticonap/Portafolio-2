@@ -21,6 +21,7 @@ body {
     font-weight: 400;
     background-color: var(--dark);
     color: var(--white);
+    transition: .4s;
 }
 
 p {
@@ -191,7 +192,8 @@ h2 {
 .experience__card__data>small {
     font-size: 0.7rem;
 }
-.experience__card h4{
+
+.experience__card h4 {
     width: 4rem;
 }
 
@@ -199,7 +201,8 @@ h2 {
 .skills {
     position: relative;
 }
-.skills::after{
+
+.skills::after {
     position: absolute;
     top: 0;
     right: 0;
@@ -208,6 +211,7 @@ h2 {
     content: '';
     background-color: var(--darker);
 }
+
 .skills__h1 {
     text-align: center;
     padding: 1rem;
@@ -220,32 +224,37 @@ h2 {
     position: relative;
     z-index: 5;
 }
-.skills__table td{
+
+.skills__table td {
     font-weight: 600;
     padding: 1rem;
 }
 
 
 /* Section Portfolio */
-.portfolio{
+.portfolio {
     background-color: var(--darker);
 }
-.portfolio__aligner{
+
+.portfolio__aligner {
     width: 100%;
     max-width: 66rem;
     margin: 0 auto;
 }
-.portfolio__h2{
+
+.portfolio__h2 {
     text-align: center;
     padding: 1rem 0 2rem 0;
 }
-.portfolio__img-container{
+
+.portfolio__img-container {
     position: relative;
     display: inline-block;
     width: 70%;
     max-width: 33rem;
 }
-.portfolio__img-container .custom-after{
+
+.portfolio__img-container .custom-after {
     position: absolute;
     top: -1rem;
     left: -0.5rem;
@@ -253,42 +262,48 @@ h2 {
     bottom: 3rem;
     background-color: var(--hight-light);
 }
-.portfolio__card{
+
+.portfolio__card {
     padding: 1rem 1.5rem;
 }
-.portfolio__card:nth-child(odd){
+
+.portfolio__card:nth-child(odd) {
     text-align: right;
 }
 
-.portfolio__img-container img{
+.portfolio__img-container img {
     position: relative;
     z-index: 5;
     width: 100%;
     height: auto;
 }
-.portfolio__text{
+
+.portfolio__text {
     text-align: left;
 }
 
 /*================================================*/
-.contact{
+.contact {
     padding: 1rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    
+
 }
-.contact__h2{
+
+.contact__h2 {
     text-align: center;
     width: 100%;
 
 }
-.contact__icon{
+
+.contact__icon {
     width: 5rem;
 }
-.contact_cell-data{
+
+.contact_cell-data {
     text-align: center;
     padding: 1rem 1.5rem;
 }
@@ -296,13 +311,36 @@ h2 {
 
 
 /*=================================================*/
-.footer{
+.footer {
     text-align: center;
     background-color: var(--darker);
     padding: 2rem;
 }
 
+#btn_top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--gray);
+    z-index: 10;
+}
 
+#btn_top img {
+    width: 1.5rem;
+    height: auto;
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+
+#btn_top:hover {
+    background-color: var(--hight-light);
+    color: var(--white);
+}
 
 @media screen and (min-width: 768px) {
     body {

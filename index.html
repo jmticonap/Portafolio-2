@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="main_containre">
+    <div id="home" class="main_containre">
 
         <header class="page-cover">
             <nav class="desktop__nav">
@@ -22,11 +22,11 @@
                 <section>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Experience</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
 
                     <input id="input_toggle" type="checkbox">
@@ -58,7 +58,7 @@
         </header>
         <main>
             <!-- Section About me -->
-            <section class="about">
+            <section id="about" class="about">
                 <h2 class="about__h1">About me</h2>
                 <p class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, reprehenderit,
                     ratione blanditiis rem error unde eius possimus harum aperiam, consequuntur sed amet temporibus
@@ -78,7 +78,7 @@
             </section>
 
             <!-- Section Experience -->
-            <section class="experience">
+            <section id="experience" class="experience">
                 <h2 class="experience__h1">Experience</h2>
                 <article class="experience__cards">
                     <div class="experience__card">
@@ -113,7 +113,7 @@
             </section>
 
             <!-- Section Skills -->
-            <section class="skills">
+            <section id="skills" class="skills">
                 <h2 class="skills__h1">My Skills</h2>
                 <table class="skills__table">
                     <tr>
@@ -140,7 +140,7 @@
             </section>
 
             <!-- Section Portfolio -->
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <div class="portfolio__aligner">
                     <h2 class="portfolio__h2">Portfolio</h2>
                     <article class="portfolio__card">
@@ -176,7 +176,7 @@
             </section>
 
             <!-- Contact -->
-            <section class="contact">
+            <section id="contact" class="contact">
                 <h2 class="contact__h2">Contact</h2>
                 <article class="contact_cell-data">
                     <img class="contact__icon" src="./assets/img/phone 3.svg" alt="">
@@ -197,7 +197,9 @@
             </p>
         </footer>
     </div>
-
+    <a id="btn_top" href="#home">
+        <img src="./assets/img/arrow_up.png" alt="to home">
+    </a>
     <script src="./assets/js/main.js" type="text/javascript"></script>
 </body>
 
